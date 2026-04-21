@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDG 17 - Partnerships for the Goals</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #0057b8;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    display: none;
+    padding: 40px;
+}
+
+.active {
+    display: block;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 200px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #0057b8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    background: #002f6c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h1>SDG 17</h1>
+    <ul>
+        <li onclick="showPage('home')">Home</li>
+        <li onclick="showPage('about')">About</li>
+        <li onclick="showPage('action')">Take Action</li>
+        <li onclick="showPage('sources')">Sources</li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active">
+    <div class="hero">
+        <img src="https://sdgs.un.org/sites/default/files/goals/E_SDG_Icons-17.jpg" alt="SDG 17">
+        <h1>Partnerships for the Goals</h1>
+        <p>Strengthening global cooperation to achieve sustainable development.</p>
+    </div>
+
+    <h2>Why SDG 17 Matters</h2>
+    <p>
+        SDG 17 emphasizes global partnerships between governments, private sectors, 
+        and individuals to achieve all Sustainable Development Goals.
+    </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h1>About SDG 17</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Global Cooperation</h3>
+            <p>Countries must collaborate through finance, technology, and knowledge sharing.</p>
+        </div>
+
+        <div class="card">
+            <h3>Technology Access</h3>
+            <p>Expanding access to digital tools helps reduce inequality worldwide.</p>
+        </div>
+
+        <div class="card">
+            <h3>Financial Support</h3>
+            <p>Developing nations need increased investment and sustainable funding.</p>
+        </div>
+    </div>
+
+    <p>
+        SDG 17 aims to "strengthen the means of implementation and revitalize the global partnership for sustainable development." :contentReference[oaicite:0]{index=0}
+    </p>
+</section>
+
+<!-- ACTION -->
+<section id="action">
+    <h1>How You Can Contribute</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌍 Collaborate</h3>
+            <p>Work with communities, NGOs, and organizations to solve local issues.</p>
+        </div>
+
+        <div class="card">
+            <h3>📢 Spread Awareness</h3>
+            <p>Educate others about SDGs through social media and discussions.</p>
+        </div>
+
+        <div class="card">
+            <h3>💡 Support Innovation</h3>
+            <p>Encourage sustainable technology and ideas in your community.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Volunteer</h3>
+            <p>Join initiatives that align with sustainability and partnerships.</p>
+        </div>
+    </div>
+
+    <p>
+        The SDGs require participation from everyone—governments, businesses, and individuals. :contentReference[oaicite:1]{index=1}
+    </p>
+</section>
+
+<!-- SOURCES -->
+<section id="sources">
+    <h1>Official UN Sources</h1>
+
+    <ul>
+        <li><a href="https://sdgs.un.org/goals/goal17" target="_blank">UN SDG 17 Overview</a></li>
+        <li><a href="https://www.un.org/sustainabledevelopment/globalpartnerships/" target="_blank">UN Global Partnerships</a></li>
+        <li><a href="https://unstats.un.org/sdgs/report/2025/" target="_blank">UN SDG Report 2025</a></li>
+    </ul>
+
+    <p>
+        According to the United Nations, SDG 17 focuses on finance, technology, trade, 
+        and data to support global development efforts. :contentReference[oaicite:2]{index=2}
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 SDG 17 Awareness Project | Inspired by United Nations Design</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function showPage(pageId) {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(section => section.classList.remove("active"));
+
+    document.getElementById(pageId).classList.add("active");
+}
+</script>
+
+</body>
+</html>
